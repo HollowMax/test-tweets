@@ -48,33 +48,34 @@ export default function Home() {
       </select>
 
       <ul className="users-list">
-        {users.map(el => {
-          if (el)
-            return (
-              <li key={el.id}>
-                <User
-                  id={el.id}
-                  avatar={el.avatar}
-                  tweets={el.Tweets}
-                  followers={el.Followers}
-                  select={select}
-                />
-              </li>
-            );
-        })}
+        {users.map(el =>
+          el ? (
+            <li key={el.id}>
+              <User
+                id={el.id}
+                avatar={el.avatar}
+                tweets={el.Tweets}
+                followers={el.Followers}
+                select={select}
+              />
+            </li>
+          ) : null
+        )}
       </ul>
       {users.length ? (
-        <div className="load-more__container">
+        <>
           {select === 'showAll' && (
-            <button
-              onClick={onLoadMore}
-              className="load-more__btn"
-              style={{ display: dataLength >= limit ? 'block' : 'none' }}
-            >
-              load more
-            </button>
+            <div className="load-more__container">
+              <button
+                onClick={onLoadMore}
+                className="load-more__btn"
+                style={{ display: dataLength >= limit ? 'block' : 'none' }}
+              >
+                load more
+              </button>
+            </div>
           )}
-        </div>
+        </>
       ) : (
         <LineWave
           height="300"
