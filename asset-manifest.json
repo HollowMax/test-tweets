@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/test-twits/static/css/main.29945688.css",
+    "main.js": "/test-twits/static/js/main.bfc1bef8.js",
+    "static/media/baseImg.png": "/test-twits/static/media/baseImg.66c3790837ec93b5e645.png",
+    "static/media/goit.svg": "/test-twits/static/media/goit.eefa2a64892bf7781f8d0c7ee8568723.svg",
+    "index.html": "/test-twits/index.html",
+    "main.29945688.css.map": "/test-twits/static/css/main.29945688.css.map",
+    "main.bfc1bef8.js.map": "/test-twits/static/js/main.bfc1bef8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.29945688.css",
+    "static/js/main.bfc1bef8.js"
+  ]
+}
